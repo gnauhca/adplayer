@@ -1,0 +1,22 @@
+*{margin:0; padding:0; font-family: "microsoft yahei";}
+ul li {list-style: none;}
+body {width: 100%;height: 100%; position: absolute; -webkit-user-select: none; -moz-user-select: none; font-family: impact;}
+.state {width:100%; height:100%; -webkit-perspective:1200px; -moz-perspective:1200px; -o-perspective:1200px; perspective:1200px; position: relative;background-image: radial-gradient(circle at center, #ddd 0%, #888 100%); overflow: hidden;}
+
+.wrap1 {position: relative; width: 66%; height: 1px; margin:0 auto; margin-top: 20px; overflow: hidden;}
+
+.loading-tip {position: absolute; top: 50%; left: 0; margin-top: -15px; height: 30px; width: 100%; text-align: center; font-size: 20px;}
+.play-item { position: absolute; top:0; left:0; z-index: 100; width:100%; height:100%; outline: 1px solid #333; overflow: hidden;}
+
+.pic-btn-wrap {position: absolute; z-index:200; bottom: 0%; padding: 2% 0;  zoom:1; width:100%; text-align: center;  background: rgba(0,0,0,0.5)}
+.pic-btn-wrap .pic-btn {display:inline-block; width: 20px; height: 20px; background: #666; box-shadow:0 0 8px #000; margin: 0 10px;  cursor: pointer;}
+
+.pic-btn-wrap .pic-btn-current {background: #ddd; box-shadow:0 0 16px #ddd; }
+
+.left-btn,.right-btn {position: absolute; top:50%; margin-top: -10%; z-index: 200; width: 10%; height: 30%; color:#ccc; background: #333; background: rgba(0,0,0,0.2); cursor: pointer; display: table-cell; overflow: hidden; vertical-align: middle; text-align: center; transition:all 0.3s;}
+.left-btn:hover,.right-btn:hover { background: #333; background: rgba(0,0,0,0.5);  margin-top: -11%;}
+.left-btn:after,.right-btn:after {display: block; content: ""; position: absolute; width:200%; height: 200%; background: rgba(255,255,255,0.5); transform: rotate(45deg);}
+.left-btn:after {left:107%; top:-80%;}
+.right-btn:after {top: -22%;  left:-208%;}
+.left-btn {left:2%;}
+.right-btn {right:2%;}
